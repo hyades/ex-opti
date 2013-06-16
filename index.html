@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ex-opti by hyades</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ex-opti</h1>
+        <p>Expense Managament System</p>
+
+        <p class="view"><a href="https://github.com/hyades/ex-opti">View the Project on GitHub <small>hyades/ex-opti</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/hyades/ex-opti/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/hyades/ex-opti/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/hyades/ex-opti">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="ex-opti" class="anchor" href="#ex-opti"><span class="octicon octicon-link"></span></a><strong>eX-Opti</strong>
+</h1>
+
+<p>eX-Opti is a multi-platform expense management system built on the cloud and hosted on Google App Engine. It can be accessed either through a PC or a mobile web browser or through telephony.</p>
+
+<hr><h2>
+<a name="the-interface" class="anchor" href="#the-interface"><span class="octicon octicon-link"></span></a><strong>THE INTERFACE:</strong>
+</h2>
+
+<h3>
+<a name="website-mobile-browser-optimized---httpex-optiappspotcom" class="anchor" href="#website-mobile-browser-optimized---httpex-optiappspotcom"><span class="octicon octicon-link"></span></a>WEBSITE (Mobile Browser Optimized) - <a href="http://ex-opti.appspot.com">http://ex-opti.appspot.com</a>
+</h3>
+
+<p>User logs in using his mobile number and a password. A tabbed interface provides the user with options to add a new entry(category of spending and amount), view analytics of existing entries (by current day, week, month, year or a custom no. of days) and perform transactions. </p>
+
+<h3>
+<a name="telephony---call-91-4466949325" class="anchor" href="#telephony---call-91-4466949325"><span class="octicon octicon-link"></span></a>TELEPHONY - Call +91-4466949325</h3>
+
+<p>User calls a number (provided by Kookoo API) and responds to a set of queries. First he is presented with a main menu where he selects whether he wants to add a new entry, obtain analytics of previous spendings or make a transaction using the ZAP API.</p>
+
+<p><strong>Adding a new entry</strong>:
+He is asked to choose the category of spending and then enter the amount spent using the keypad. The caller id, amount, category and date are then stored on the App Engine Datastore. </p>
+
+<p><strong>Analytics of previous spendings:</strong>
+Quick Analysis: The day's total Spending
+Detailed Analysis: Total spending (current week, current month, current year)</p>
+
+<p><strong>Make transactions:</strong>
+Will be done using ZAP API</p>
+
+<hr><h2>
+<a name="the-implementation" class="anchor" href="#the-implementation"><span class="octicon octicon-link"></span></a>THE IMPLEMENTATION:</h2>
+
+<p>Both the website as well as the telephony app were implemented in Python (Version 2.7).  It uses the following APIs:</p>
+
+<ol>
+<li>Kookoo API (<a href="http://www.kookoo.in">www.kookoo.in</a>)</li>
+<li>Google Charts API </li>
+</ol><hr><h2>
+<a name="todo-list-of-features" class="anchor" href="#todo-list-of-features"><span class="octicon octicon-link"></span></a><strong>TODO List Of Features:</strong>
+</h2>
+
+<ol>
+<li>Password Authentication - Since we were not clear about what details the ZAP API wanted for user authentication.</li>
+<li>Make Transactions - Due to unavailability of ZAP API access. </li>
+</ol><h1>
+<a name="team" class="anchor" href="#team"><span class="octicon octicon-link"></span></a><strong>TEAM:</strong>
+</h1>
+
+<p>Aayush Ahuja - <a href="mailto:aayushahuja@gmail.com">aayushahuja@gmail.com</a>
+N Hari Prasad - <a href="mailto:hari.excellence@gmail.com">hari.excellence@gmail.com</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/hyades">hyades</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-41289176-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
